@@ -1,44 +1,24 @@
 import React from "react";
-import Link from "next/link";
-
-import { urlFor } from "../lib/client";
-
-const FooterBanner = ({
-  footerBanner: {
-    discount,
-    largeText1,
-    largeText2,
-    saleTime,
-    smallText,
-    midText,
-    desc,
-    product,
-    buttonText,
-    image,
-  },
-}) => {
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa";
+const Footer = () => {
   return (
-    <div className="footer-banner-container">
-      <div className="banner-desc">
-        <div className="left">
-          <p>{discount}</p>
-          <h3>{largeText1}</h3>
-          <h3>{largeText2}</h3>
-          <p>{saleTime}</p>
-        </div>
-        <div className="right">
-          <p>{smallText}</p>
-          <h3>{midText}</h3>
-          <p>{desc}</p>
-          <Link href={`/product/${product}`}>
-            <button type="button">{buttonText}</button>
-          </Link>
-        </div>
+    <div className="footer-container">
+      <p>2025 Winged Panda All rights reserverd</p>
+      <p className="icons">
+        <a
+          href="https://www.instagram.com/winged_panda_crafts/"
+          target="_blank"
+        >
+          <AiFillInstagram />
+        </a>
 
-        <img src={urlFor(image)} className="footer-banner-image" />
-      </div>
+        <a href="https://www.tiktok.com/@wingedpandacrafts" target="_blank">
+          <FaTiktok />
+        </a>
+      </p>
     </div>
   );
 };
 
-export default FooterBanner;
+export default Footer;
