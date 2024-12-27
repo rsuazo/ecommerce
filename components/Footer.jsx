@@ -1,13 +1,21 @@
 import React from "react";
-import { AiFillInstagram, AiOutlineTwitter } from "react-icons/ai";
-
+import { AiFillInstagram } from "react-icons/ai";
+import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2022 JSM Headphones All rights reserverd</p>
+      <p>2025 Winged Panda All rights reserverd</p>
       <p className="icons">
-        <AiFillInstagram />
-        <AiOutlineTwitter />
+        <a
+          href="https://www.instagram.com/winged_panda_crafts/"
+          target="_blank"
+        >
+          <AiFillInstagram />
+        </a>
+
+        <a href="https://www.tiktok.com/@wingedpandacrafts" target="_blank">
+          <FaTiktok />
+        </a>
       </p>
     </div>
   );
