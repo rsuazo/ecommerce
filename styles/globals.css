@@ -233,8 +233,8 @@ span.text-red {
 .banner-desc button {
   border-radius: 15px;
   padding: 10px 16px;
-  background-color: white;
-  color: red;
+  background-color: #edcece;
+  color: #525252;
   border: none;
   margin-top: 40px;
   font-size: 18px;
