@@ -4,7 +4,7 @@ import { FaTiktok } from "react-icons/fa";
 const Footer = () => {
   return (
     <div className="footer-container">
-      <p>2025 Winged Panda All rights reserverd</p>
+      <p>2025 Winged Panda All rights reserved</p>
       <p className="icons">
         <a
           href="https://www.instagram.com/winged_panda_crafts/"
